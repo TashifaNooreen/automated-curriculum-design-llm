@@ -1,0 +1,133 @@
+{
+  "course_title": "Introduction to Machine Learning",
+  "level": "Undergraduate - Beginner",
+  "duration_weeks": 6,
+  "course_outcomes": [
+    "Explain core machine learning concepts, paradigms, and workflows.",
+    "Perform data preprocessing, feature engineering, and exploratory data analysis using Python.",
+    "Implement supervised and unsupervised machine learning algorithms using Scikit-Learn.",
+    "Evaluate and optimize model performance using appropriate metrics and cross-validation techniques."
+  ],
+  "modules": [
+    {
+      "week": 1,
+      "module_title": "Introduction to Machine Learning & Python Ecosystem",
+      "topics": [
+        "Overview of Machine Learning: Supervised, Unsupervised, and Reinforcement Learning",
+        "The Machine Learning Workflow",
+        "Setting up the Python Environment (Jupyter Notebooks, Google Colab)",
+        "Introduction to key libraries: NumPy, Pandas, Matplotlib, and Scikit-Learn"
+      ],
+      "learning_outcomes": [
+        "Differentiate between supervised, unsupervised, and reinforcement learning paradigms.",
+        "Set up a Python environment for data science and machine learning.",
+        "Load and inspect datasets using Pandas and NumPy."
+      ],
+      "suggested_resources": [
+        "Python Data Science Handbook by Jake VanderPlas (Chapters 2 & 3)",
+        "Scikit-Learn Official Getting Started Tutorial"
+      ]
+    },
+    {
+      "week": 2,
+      "module_title": "Data Preprocessing & Exploratory Data Analysis (EDA)",
+      "topics": [
+        "Handling missing values and outliers",
+        "Categorical data encoding (One-Hot Encoding, Label Encoding)",
+        "Feature scaling (Standardization vs. Normalization)",
+        "Splitting data into training and testing sets"
+      ],
+      "learning_outcomes": [
+        "Clean raw datasets and handle missing values appropriately.",
+        "Transform categorical data and scale numerical features for model compatibility.",
+        "Apply train-test splits to avoid data leakage."
+      ],
+      "suggested_resources": [
+        "Kaggle Data Cleaning Course",
+        "Scikit-Learn Utilities for Preprocessing Documentation"
+      ]
+    },
+    {
+      "week": 3,
+      "module_title": "Supervised Learning I: Regression Algorithms",
+      "topics": [
+        "Simple and Multiple Linear Regression",
+        "Cost Functions and Gradient Descent intuition",
+        "Evaluating Regression Models: MAE, MSE, RMSE, and R-squared",
+        "Implementing Regression with Scikit-Learn"
+      ],
+      "learning_outcomes": [
+        "Understand the mathematical foundation of Linear Regression.",
+        "Train and predict using Linear Regression models in Python.",
+        "Select and compute appropriate performance metrics for regression tasks."
+      ],
+      "suggested_resources": [
+        "StatQuest: Linear Regression Series on YouTube",
+        "Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow (Chapter 4)"
+      ]
+    },
+    {
+      "week": 4,
+      "module_title": "Supervised Learning II: Classification Algorithms",
+      "topics": [
+        "Binary vs. Multi-class Classification",
+        "Logistic Regression and Decision Trees",
+        "Evaluation Metrics: Accuracy, Precision, Recall, F1-Score",
+        "Confusion Matrix and ROC-AUC Curves"
+      ],
+      "learning_outcomes": [
+        "Build classification models using Logistic Regression and Decision Trees.",
+        "Interpret confusion matrices to evaluate model performance.",
+        "Choose proper evaluation metrics for balanced and imbalanced datasets."
+      ],
+      "suggested_resources": [
+        "Machine Learning by Andrew Ng (Coursera - Classification Modules)",
+        "Scikit-Learn Guide on Model Evaluation"
+      ]
+    },
+    {
+      "week": 5,
+      "module_title": "Model Evaluation, Validation & Hyperparameter Tuning",
+      "topics": [
+        "Overfitting vs. Underfitting (Bias-Variance Tradeoff)",
+        "K-Fold Cross-Validation",
+        "Hyperparameter Tuning using GridSearchCV and RandomizedSearchCV",
+        "Regularization techniques (Ridge and Lasso intuition)"
+      ],
+      "learning_outcomes": [
+        "Diagnose model bias and variance issues.",
+        "Perform K-Fold Cross-Validation to assess model generalization.",
+        "Optimize hyperparameters to improve model performance."
+      ],
+      "suggested_resources": [
+        "Scikit-Learn Documentation on Tuning the Hyperparameters of an Estimator",
+        "An Introduction to Statistical Learning (Chapter 5: Resampling Methods)"
+      ]
+    },
+    {
+      "week": 6,
+      "module_title": "Unsupervised Learning & End-to-End Workflow",
+      "topics": [
+        "Introduction to Unsupervised Learning",
+        "Clustering with K-Means",
+        "Intuition behind Principal Component Analysis (PCA)",
+        "Structuring an End-to-End Machine Learning Project"
+      ],
+      "learning_outcomes": [
+        "Implement K-Means clustering to discover patterns in unlabeled data.",
+        "Understand the concept of dimensionality reduction.",
+        "Assemble a full ML pipeline from data loading to evaluation."
+      ],
+      "suggested_resources": [
+        "Scikit-Learn Clustering User Guide",
+        "Kaggle End-to-End Machine Learning Workflows"
+      ]
+    }
+  ],
+  "project_ideas": [
+    "Predicting Housing Prices: Build and evaluate a linear regression pipeline to estimate house sales prices based on features like area, location, and rooms.",
+    "Customer Churn Prediction: Develop a binary classification model (Logistic Regression / Decision Tree) to predict whether a telecom customer will churn.",
+    "Iris Flower Species Classification: Apply EDA, model training, and performance visualization using the classic Iris dataset.",
+    "E-commerce Customer Segmentation: Group shoppers into behavioral clusters using K-Means clustering based on purchasing history."
+  ]
+}
