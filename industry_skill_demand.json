@@ -1,0 +1,693 @@
+{
+  "total_jobs_analyzed": 30,
+  "source": "Adzuna API (India) - ML/AI/Data Scientist roles",
+  "extraction_model": "Groq - Llama 3.3 70B Versatile",
+  "skills_ranked": [
+    {
+      "skill_name": "Machine Learning",
+      "frequency": 19,
+      "demand_score": 1.0,
+      "seen_in_roles": [
+        "Associate Director, Machine Learning Engineering",
+        "Data Scientist",
+        "Lead AI Engineer, Director",
+        "MTS-1 Machine Learning Engineer",
+        "Machine Learning Engineer - APAC",
+        "Senior Machine Learning Engineer",
+        "Senior Machine Learning Engineer (Growth & ML), Hyderabad",
+        "Senior Machine Learning Engineer, Hyderabad",
+        "Staff Machine Learning Engineer - (Data & Audience Platform)"
+      ]
+    },
+    {
+      "skill_name": "Python",
+      "frequency": 15,
+      "demand_score": 0.789,
+      "seen_in_roles": [
+        "Data Scientist",
+        "Lead AI Engineer, Director",
+        "MTS-1 Machine Learning Engineer",
+        "Machine Learning Engineer - APAC",
+        "Senior Machine Learning Engineer",
+        "Senior Machine Learning Engineer (Growth & ML), Hyderabad",
+        "Senior Machine Learning Engineer, Hyderabad",
+        "Staff Machine Learning Engineer - (Data & Audience Platform)"
+      ]
+    },
+    {
+      "skill_name": "MLOps",
+      "frequency": 13,
+      "demand_score": 0.684,
+      "seen_in_roles": [
+        "Associate Director, Machine Learning Engineering",
+        "Data Scientist",
+        "Lead AI Engineer, Director",
+        "MTS-1 Machine Learning Engineer",
+        "Machine Learning Engineer - APAC",
+        "Senior Machine Learning Engineer",
+        "Senior Machine Learning Engineer (Growth & ML), Hyderabad",
+        "Senior Machine Learning Engineer, Hyderabad",
+        "Staff Machine Learning Engineer - (Data & Audience Platform)"
+      ]
+    },
+    {
+      "skill_name": "Communication",
+      "frequency": 13,
+      "demand_score": 0.684,
+      "seen_in_roles": [
+        "Data Scientist",
+        "Lead AI Engineer, Director",
+        "MTS-1 Machine Learning Engineer",
+        "Machine Learning Engineer - APAC",
+        "Senior Machine Learning Engineer (Growth & ML), Hyderabad",
+        "Senior Machine Learning Engineer, Hyderabad",
+        "Staff Machine Learning Engineer - (Data & Audience Platform)"
+      ]
+    },
+    {
+      "skill_name": "SQL",
+      "frequency": 12,
+      "demand_score": 0.632,
+      "seen_in_roles": [
+        "Data Scientist",
+        "MTS-1 Machine Learning Engineer",
+        "Machine Learning Engineer - APAC",
+        "Senior Machine Learning Engineer (Growth & ML), Hyderabad",
+        "Senior Machine Learning Engineer, Hyderabad",
+        "Staff Machine Learning Engineer - (Data & Audience Platform)"
+      ]
+    },
+    {
+      "skill_name": "Problem Solving",
+      "frequency": 8,
+      "demand_score": 0.421,
+      "seen_in_roles": [
+        "Data Scientist",
+        "MTS-1 Machine Learning Engineer",
+        "Machine Learning Engineer - APAC",
+        "Senior Machine Learning Engineer (Growth & ML), Hyderabad",
+        "Senior Machine Learning Engineer, Hyderabad"
+      ]
+    },
+    {
+      "skill_name": "Software Engineering",
+      "frequency": 7,
+      "demand_score": 0.368,
+      "seen_in_roles": [
+        "AI Engineer",
+        "Associate Director, Machine Learning Engineering",
+        "MTS-1 Machine Learning Engineer",
+        "Machine Learning Engineer - APAC",
+        "Senior Machine Learning Engineer",
+        "Senior Machine Learning Engineer, Hyderabad"
+      ]
+    },
+    {
+      "skill_name": "Artificial Intelligence",
+      "frequency": 6,
+      "demand_score": 0.316,
+      "seen_in_roles": [
+        "AI Engineer",
+        "Data Scientist",
+        "Machine Learning Engineer - APAC",
+        "Senior Machine Learning Engineer"
+      ]
+    },
+    {
+      "skill_name": "Deep Learning",
+      "frequency": 6,
+      "demand_score": 0.316,
+      "seen_in_roles": [
+        "Data Scientist",
+        "Lead AI Engineer, Director",
+        "MTS-1 Machine Learning Engineer",
+        "Senior Machine Learning Engineer, Hyderabad"
+      ]
+    },
+    {
+      "skill_name": "Data Analysis",
+      "frequency": 6,
+      "demand_score": 0.316,
+      "seen_in_roles": [
+        "AI Engineer",
+        "Data Scientist",
+        "Senior Machine Learning Engineer (Growth & ML), Hyderabad"
+      ]
+    },
+    {
+      "skill_name": "Collaboration",
+      "frequency": 5,
+      "demand_score": 0.263,
+      "seen_in_roles": [
+        "Associate Director, Machine Learning Engineering",
+        "Data Scientist",
+        "Lead AI Engineer, Director",
+        "Senior Machine Learning Engineer",
+        "Senior Machine Learning Engineer, Hyderabad"
+      ]
+    },
+    {
+      "skill_name": "Model Deployment",
+      "frequency": 5,
+      "demand_score": 0.263,
+      "seen_in_roles": [
+        "AI Engineer",
+        "Associate Director, Machine Learning Engineering",
+        "Senior Machine Learning Engineer",
+        "Senior Machine Learning Engineer, Hyderabad"
+      ]
+    },
+    {
+      "skill_name": "Data Science",
+      "frequency": 5,
+      "demand_score": 0.263,
+      "seen_in_roles": [
+        "Associate Director, Machine Learning Engineering",
+        "Data Scientist",
+        "Machine Learning Engineer - APAC"
+      ]
+    },
+    {
+      "skill_name": "Leadership",
+      "frequency": 5,
+      "demand_score": 0.263,
+      "seen_in_roles": [
+        "Associate Director, Machine Learning Engineering",
+        "Data Scientist",
+        "Lead AI Engineer, Director",
+        "Staff Machine Learning Engineer - (Data & Audience Platform)"
+      ]
+    },
+    {
+      "skill_name": "Cloud Computing",
+      "frequency": 4,
+      "demand_score": 0.211,
+      "seen_in_roles": [
+        "Data Scientist",
+        "Lead AI Engineer, Director",
+        "Senior Machine Learning Engineer",
+        "Staff Machine Learning Engineer - (Data & Audience Platform)"
+      ]
+    },
+    {
+      "skill_name": "Statistical Analysis",
+      "frequency": 3,
+      "demand_score": 0.158,
+      "seen_in_roles": [
+        "Data Scientist"
+      ]
+    },
+    {
+      "skill_name": "Data Visualization",
+      "frequency": 3,
+      "demand_score": 0.158,
+      "seen_in_roles": [
+        "Data Scientist"
+      ]
+    },
+    {
+      "skill_name": "Data Architecture",
+      "frequency": 2,
+      "demand_score": 0.105,
+      "seen_in_roles": [
+        "Senior Machine Learning Engineer",
+        "Staff Machine Learning Engineer - (Data & Audience Platform)"
+      ]
+    },
+    {
+      "skill_name": "System Design",
+      "frequency": 2,
+      "demand_score": 0.105,
+      "seen_in_roles": [
+        "Associate Director, Machine Learning Engineering",
+        "Staff Machine Learning Engineer - (Data & Audience Platform)"
+      ]
+    },
+    {
+      "skill_name": "Big Data",
+      "frequency": 2,
+      "demand_score": 0.105,
+      "seen_in_roles": [
+        "Data Scientist",
+        "Staff Machine Learning Engineer - (Data & Audience Platform)"
+      ]
+    },
+    {
+      "skill_name": "Advanced Analytics",
+      "frequency": 2,
+      "demand_score": 0.105,
+      "seen_in_roles": [
+        "Data Scientist"
+      ]
+    },
+    {
+      "skill_name": "Predictive Modeling",
+      "frequency": 2,
+      "demand_score": 0.105,
+      "seen_in_roles": [
+        "Data Scientist"
+      ]
+    },
+    {
+      "skill_name": "Generative AI",
+      "frequency": 2,
+      "demand_score": 0.105,
+      "seen_in_roles": [
+        "AI Engineer"
+      ]
+    },
+    {
+      "skill_name": "AI",
+      "frequency": 2,
+      "demand_score": 0.105,
+      "seen_in_roles": [
+        "Data Scientist",
+        "Lead AI Engineer, Director"
+      ]
+    },
+    {
+      "skill_name": "Statistical Modeling",
+      "frequency": 2,
+      "demand_score": 0.105,
+      "seen_in_roles": [
+        "Data Scientist"
+      ]
+    },
+    {
+      "skill_name": "Data Collection",
+      "frequency": 1,
+      "demand_score": 0.053,
+      "seen_in_roles": [
+        "Senior Machine Learning Engineer"
+      ]
+    },
+    {
+      "skill_name": "Platform Engineering",
+      "frequency": 1,
+      "demand_score": 0.053,
+      "seen_in_roles": [
+        "Senior Machine Learning Engineer"
+      ]
+    },
+    {
+      "skill_name": "Scalability",
+      "frequency": 1,
+      "demand_score": 0.053,
+      "seen_in_roles": [
+        "Senior Machine Learning Engineer"
+      ]
+    },
+    {
+      "skill_name": "Large Language Models",
+      "frequency": 1,
+      "demand_score": 0.053,
+      "seen_in_roles": [
+        "Senior Machine Learning Engineer"
+      ]
+    },
+    {
+      "skill_name": "Infrastructure Engineering",
+      "frequency": 1,
+      "demand_score": 0.053,
+      "seen_in_roles": [
+        "Senior Machine Learning Engineer"
+      ]
+    },
+    {
+      "skill_name": "Data Discovery",
+      "frequency": 1,
+      "demand_score": 0.053,
+      "seen_in_roles": [
+        "Senior Machine Learning Engineer"
+      ]
+    },
+    {
+      "skill_name": "Software Development",
+      "frequency": 1,
+      "demand_score": 0.053,
+      "seen_in_roles": [
+        "Senior Machine Learning Engineer"
+      ]
+    },
+    {
+      "skill_name": "Data Analytics",
+      "frequency": 1,
+      "demand_score": 0.053,
+      "seen_in_roles": [
+        "Machine Learning Engineer - APAC"
+      ]
+    },
+    {
+      "skill_name": "Data Structures & Algorithms",
+      "frequency": 1,
+      "demand_score": 0.053,
+      "seen_in_roles": [
+        "MTS-1 Machine Learning Engineer"
+      ]
+    },
+    {
+      "skill_name": "Distributed Systems",
+      "frequency": 1,
+      "demand_score": 0.053,
+      "seen_in_roles": [
+        "MTS-1 Machine Learning Engineer"
+      ]
+    },
+    {
+      "skill_name": "Machine Learning Engineering",
+      "frequency": 1,
+      "demand_score": 0.053,
+      "seen_in_roles": [
+        "Associate Director, Machine Learning Engineering"
+      ]
+    },
+    {
+      "skill_name": "Algorithms",
+      "frequency": 1,
+      "demand_score": 0.053,
+      "seen_in_roles": [
+        "Associate Director, Machine Learning Engineering"
+      ]
+    },
+    {
+      "skill_name": "A/B Testing",
+      "frequency": 1,
+      "demand_score": 0.053,
+      "seen_in_roles": [
+        "Senior Machine Learning Engineer (Growth & ML), Hyderabad"
+      ]
+    },
+    {
+      "skill_name": "Statistics",
+      "frequency": 1,
+      "demand_score": 0.053,
+      "seen_in_roles": [
+        "Senior Machine Learning Engineer (Growth & ML), Hyderabad"
+      ]
+    },
+    {
+      "skill_name": "Growth Analytics",
+      "frequency": 1,
+      "demand_score": 0.053,
+      "seen_in_roles": [
+        "Senior Machine Learning Engineer (Growth & ML), Hyderabad"
+      ]
+    },
+    {
+      "skill_name": "Microsoft Azure AI",
+      "frequency": 1,
+      "demand_score": 0.053,
+      "seen_in_roles": [
+        "AI Engineer"
+      ]
+    },
+    {
+      "skill_name": "Copilot",
+      "frequency": 1,
+      "demand_score": 0.053,
+      "seen_in_roles": [
+        "AI Engineer"
+      ]
+    },
+    {
+      "skill_name": "Intelligent Automation",
+      "frequency": 1,
+      "demand_score": 0.053,
+      "seen_in_roles": [
+        "AI Engineer"
+      ]
+    },
+    {
+      "skill_name": "Model Optimization",
+      "frequency": 1,
+      "demand_score": 0.053,
+      "seen_in_roles": [
+        "AI Engineer"
+      ]
+    },
+    {
+      "skill_name": "Prototyping",
+      "frequency": 1,
+      "demand_score": 0.053,
+      "seen_in_roles": [
+        "AI Engineer"
+      ]
+    },
+    {
+      "skill_name": "Workflow Automation",
+      "frequency": 1,
+      "demand_score": 0.053,
+      "seen_in_roles": [
+        "AI Engineer"
+      ]
+    },
+    {
+      "skill_name": "Strategic Communication",
+      "frequency": 1,
+      "demand_score": 0.053,
+      "seen_in_roles": [
+        "AI Engineer"
+      ]
+    },
+    {
+      "skill_name": "AI Strategy",
+      "frequency": 1,
+      "demand_score": 0.053,
+      "seen_in_roles": [
+        "AI Engineer"
+      ]
+    },
+    {
+      "skill_name": "Data Engineering",
+      "frequency": 1,
+      "demand_score": 0.053,
+      "seen_in_roles": [
+        "Lead AI Engineer, Director"
+      ]
+    },
+    {
+      "skill_name": "Intelligent Process Automation",
+      "frequency": 1,
+      "demand_score": 0.053,
+      "seen_in_roles": [
+        "Data Scientist"
+      ]
+    },
+    {
+      "skill_name": "Customer Experience Management",
+      "frequency": 1,
+      "demand_score": 0.053,
+      "seen_in_roles": [
+        "Data Scientist"
+      ]
+    },
+    {
+      "skill_name": "Mentorship",
+      "frequency": 1,
+      "demand_score": 0.053,
+      "seen_in_roles": [
+        "Data Scientist"
+      ]
+    },
+    {
+      "skill_name": "Project Management",
+      "frequency": 1,
+      "demand_score": 0.053,
+      "seen_in_roles": [
+        "Data Scientist"
+      ]
+    },
+    {
+      "skill_name": "Business Acumen",
+      "frequency": 1,
+      "demand_score": 0.053,
+      "seen_in_roles": [
+        "Data Scientist"
+      ]
+    },
+    {
+      "skill_name": "Data Cleaning",
+      "frequency": 1,
+      "demand_score": 0.053,
+      "seen_in_roles": [
+        "Data Scientist"
+      ]
+    },
+    {
+      "skill_name": "Databricks",
+      "frequency": 1,
+      "demand_score": 0.053,
+      "seen_in_roles": [
+        "Data Scientist"
+      ]
+    },
+    {
+      "skill_name": "Large-scale datasets",
+      "frequency": 1,
+      "demand_score": 0.053,
+      "seen_in_roles": [
+        "Data Scientist"
+      ]
+    },
+    {
+      "skill_name": "Quantitative Analysis",
+      "frequency": 1,
+      "demand_score": 0.053,
+      "seen_in_roles": [
+        "Data Scientist"
+      ]
+    },
+    {
+      "skill_name": "Statistical Modelling",
+      "frequency": 1,
+      "demand_score": 0.053,
+      "seen_in_roles": [
+        "Data Scientist"
+      ]
+    },
+    {
+      "skill_name": "Behavioural Science",
+      "frequency": 1,
+      "demand_score": 0.053,
+      "seen_in_roles": [
+        "Data Scientist"
+      ]
+    },
+    {
+      "skill_name": "Workforce Data",
+      "frequency": 1,
+      "demand_score": 0.053,
+      "seen_in_roles": [
+        "Data Scientist"
+      ]
+    },
+    {
+      "skill_name": "Data-Driven Decision Making",
+      "frequency": 1,
+      "demand_score": 0.053,
+      "seen_in_roles": [
+        "Data Scientist"
+      ]
+    },
+    {
+      "skill_name": "AI Agent Development",
+      "frequency": 1,
+      "demand_score": 0.053,
+      "seen_in_roles": [
+        "Data Scientist"
+      ]
+    },
+    {
+      "skill_name": "LLM",
+      "frequency": 1,
+      "demand_score": 0.053,
+      "seen_in_roles": [
+        "Data Scientist"
+      ]
+    },
+    {
+      "skill_name": "Agentic AI",
+      "frequency": 1,
+      "demand_score": 0.053,
+      "seen_in_roles": [
+        "Data Scientist"
+      ]
+    },
+    {
+      "skill_name": "Prompt Engineering",
+      "frequency": 1,
+      "demand_score": 0.053,
+      "seen_in_roles": [
+        "Data Scientist"
+      ]
+    },
+    {
+      "skill_name": "Tool Integration",
+      "frequency": 1,
+      "demand_score": 0.053,
+      "seen_in_roles": [
+        "Data Scientist"
+      ]
+    },
+    {
+      "skill_name": "AI Evaluation",
+      "frequency": 1,
+      "demand_score": 0.053,
+      "seen_in_roles": [
+        "Data Scientist"
+      ]
+    },
+    {
+      "skill_name": "Data Platforms",
+      "frequency": 1,
+      "demand_score": 0.053,
+      "seen_in_roles": [
+        "Data Scientist"
+      ]
+    },
+    {
+      "skill_name": "API Integration",
+      "frequency": 1,
+      "demand_score": 0.053,
+      "seen_in_roles": [
+        "Data Scientist"
+      ]
+    },
+    {
+      "skill_name": "Cloud",
+      "frequency": 1,
+      "demand_score": 0.053,
+      "seen_in_roles": [
+        "Data Scientist"
+      ]
+    },
+    {
+      "skill_name": "Analytical Skills",
+      "frequency": 1,
+      "demand_score": 0.053,
+      "seen_in_roles": [
+        "Data Scientist"
+      ]
+    },
+    {
+      "skill_name": "NLP",
+      "frequency": 1,
+      "demand_score": 0.053,
+      "seen_in_roles": [
+        "Data Scientist"
+      ]
+    },
+    {
+      "skill_name": "Computer Vision",
+      "frequency": 1,
+      "demand_score": 0.053,
+      "seen_in_roles": [
+        "Data Scientist"
+      ]
+    },
+    {
+      "skill_name": "Forecasting",
+      "frequency": 1,
+      "demand_score": 0.053,
+      "seen_in_roles": [
+        "Data Scientist"
+      ]
+    },
+    {
+      "skill_name": "Optimization",
+      "frequency": 1,
+      "demand_score": 0.053,
+      "seen_in_roles": [
+        "Data Scientist"
+      ]
+    },
+    {
+      "skill_name": "Cloud (AWS)",
+      "frequency": 1,
+      "demand_score": 0.053,
+      "seen_in_roles": [
+        "Data Scientist"
+      ]
+    }
+  ]
+}
