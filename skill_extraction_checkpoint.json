@@ -28,7 +28,8 @@
     25,
     26,
     27,
-    28
+    28,
+    29
   ],
   "results": [
     {
@@ -263,6 +264,16 @@
     {
       "title": "Data Scientist",
       "skills": []
+    },
+    {
+      "title": "Data Scientist",
+      "skills": [
+        "Python",
+        "SQL",
+        "Machine Learning",
+        "MLOps",
+        "Communication"
+      ]
     }
   ]
 }

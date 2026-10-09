@@ -15,7 +15,9 @@ import os
 import json
 import time
 from collections import Counter
+# pyrefly: ignore [missing-import]
 from groq import Groq
+# pyrefly: ignore [missing-import] 
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -133,36 +135,82 @@ def process_all_jobs(input_file="job_postings_raw.json"):
     return skill_counter, skill_to_roles, len(jobs)
 
 
-def build_demand_report(skill_counter, skill_to_roles, total_jobs):
+try:
+    from models.gartner_fetcher import get_gartner_tech_trends
+except ImportError:
+    from gartner_fetcher import get_gartner_tech_trends
+
+
+def build_demand_report(skill_counter, skill_to_roles, total_jobs, include_gartner=True):
+    """
+    Fuses Adzuna job posting frequency with Gartner Strategic Technology Trends
+    to create a multi-source weighted industry skill demand report.
+    """
     max_count = max(skill_counter.values()) if skill_counter else 1
 
-    report = []
+    # Map of skill_name -> unified data object
+    unified_skills = {}
+
+    # 1. Process Adzuna job posting skills
     for skill, count in skill_counter.most_common():
-        report.append({
+        norm_score = round(count / max_count, 3)
+        unified_skills[skill] = {
             "skill_name": skill,
             "frequency": count,
-            "demand_score": round(count / max_count, 3),
-            "seen_in_roles": sorted(skill_to_roles[skill]),
-        })
+            "demand_score": norm_score,
+            "seen_in_roles": sorted(skill_to_roles.get(skill, [])),
+            "source": "Adzuna Job Market",
+            "category": "Current Market Demand",
+            "gartner_boost": False,
+        }
+
+    # 2. Integrate Gartner emerging tech trends
+    gartner_trends = get_gartner_tech_trends() if include_gartner else []
+    for trend in gartner_trends:
+        name = trend["skill_name"]
+        impact = trend["gartner_impact_score"]
+
+        if name in unified_skills:
+            # Boost score for skills present in BOTH live jobs and Gartner reports
+            item = unified_skills[name]
+            fused_score = round(0.6 * item["demand_score"] + 0.4 * impact, 3)
+            item["demand_score"] = fused_score
+            item["source"] = "Adzuna Job Market + Gartner Strategic Trend"
+            item["category"] = f"High-Impact ({trend['category']})"
+            item["gartner_boost"] = True
+        else:
+            unified_skills[name] = {
+                "skill_name": name,
+                "frequency": 1,
+                "demand_score": round(0.85 * impact, 3),
+                "seen_in_roles": ["AI/Software Engineer (Emerging Role)"],
+                "source": "Gartner Strategic Tech Trend",
+                "category": trend["category"],
+                "gartner_boost": True,
+            }
+
+    # Sort final report by fused demand_score descending
+    ranked_report = sorted(unified_skills.values(), key=lambda x: x["demand_score"], reverse=True)
 
     return {
         "total_jobs_analyzed": total_jobs,
-        "source": "Adzuna API (India) - ML/AI/Data Scientist roles",
+        "source": "Multi-Source Fusion (Adzuna API + Gartner Tech Trends)",
         "extraction_model": "Groq - Llama 3.3 70B Versatile",
-        "skills_ranked": report,
+        "gartner_trends_integrated": len(gartner_trends),
+        "skills_ranked": ranked_report,
     }
 
 
 if __name__ == "__main__":
     counter, roles_map, total = process_all_jobs("job_postings_raw.json")
 
-    report = build_demand_report(counter, roles_map, total)
+    report = build_demand_report(counter, roles_map, total, include_gartner=True)
 
     with open("industry_skill_demand.json", "w") as f:
         json.dump(report, f, indent=2)
 
-    print(f"\nDone. Analyzed {total} jobs, extracted {len(counter)} unique skills.")
-    print("Saved ranked demand report to industry_skill_demand.json")
-    print("\nTop 10 skills by demand:")
+    print(f"\nDone. Analyzed {total} jobs & Gartner trends, extracted {len(report['skills_ranked'])} unique skills.")
+    print("Saved multi-source ranked demand report to industry_skill_demand.json")
+    print("\nTop 10 skills by demand (Adzuna + Gartner Fused):")
     for item in report["skills_ranked"][:10]:
-        print(f"  {item['skill_name']}: {item['frequency']} postings (score: {item['demand_score']})")
+        print(f"  {item['skill_name']}: score {item['demand_score']} ({item['source']})")
